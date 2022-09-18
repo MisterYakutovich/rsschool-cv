@@ -1,4 +1,4 @@
-## **[rsschool]()**
+## **[rsschool-cv](https://MisterYakutovich.github.io/rsschool-cv/)**
 ---
 # **PAVEL YAKUTOVICH**
 
@@ -13,7 +13,7 @@
 
 ## **About myself**
 ---
-Web developer with experience mainly in frontend engineering.I am looking for a job in a company where i can apply my skills in web development.
+A novice Web developer, mainly in frontend engineering.I am looking for a job in a company where i can apply my skills in web development.
 ## **Education and courses**
 ---
 * ### Belarusian Polytechnic College in Grodno
@@ -58,7 +58,7 @@ function findLongName(programmingLanguage) {
             longName = i;
         }
     }
-    
+
     return programmingLanguage[longName];
 }
 console.log(findLongName(programmingLanguage));
