@@ -26,3 +26,40 @@ Web developer with experience mainly in frontend engineering.I am looking for a 
 ---
 * ### Russian - native
 * ### English - A2
+## **Tech Skills**
+---
+* #### HTML5, CSS
+* #### MySql, Sequelize
+* #### JavaScript (Basic)
+* #### React, Express.js
+* #### Git
+## **Code examples**
+---
+*Search for the programming language with the longest name*
+```
+const programmingLanguage = [{
+    name: 'C#',
+    rating: 9,
+}, {
+    name: 'JS',
+    rating: 8.5,
+}, {
+    name: 'PHP',
+    rating: 3,
+}, {
+    name: 'Java',
+    rating: 3,
+},];
+
+function findLongName(programmingLanguage) {
+    let longName = 0;
+    for (let i in programmingLanguage) {
+        if (programmingLanguage[i].name.length > programmingLanguage[longName].name.length) {
+            longName = i;
+        }
+    }
+    
+    return programmingLanguage[longName];
+}
+console.log(findLongName(programmingLanguage));
+```
