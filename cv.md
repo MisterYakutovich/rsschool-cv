@@ -19,7 +19,7 @@ A novice Web developer, mainly in frontend engineering.I am looking for a job in
 * ### Belarusian Polytechnic College in Grodno
   * #### <span style="color:green">Technical and mechanical faculty</span>
   * #### 09/2001-06/2005
-* ### Step Computer Academy
+* ### Step Computer Academy 
   * #### <span style="color:green">Web developer courses<span>
   * #### 02/2021-02/2022
   
