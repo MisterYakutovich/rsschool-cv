@@ -22,26 +22,6 @@ A novice Web developer, mainly in frontend engineering.I am looking for a job in
 * ### Step Computer Academy
   * #### <span style="color:green">Web developer courses<span>
   * #### 02/2021-02/2022
-## **Languages**
----
-* ### Russian - native
-* ### English - A2
-## **Experience**
----
-#### <span style="color:green">Web Developer</span>
-
-Self Employed:
-2021-present
-* ### Backend and front-end development- Javascript,Axios,MySql,Express,React,HTML,CSS
-* ### Building links between models and describing them through ORM (Sequelize)
-
-## **Tech Skills**
----
-* #### HTML5, CSS
-* #### MySql, Sequelize
-* #### JavaScript (Basic)
-* #### React, Express.js
-* #### Git
 ## **Code examples**
 ---
 *Search for the programming language with the longest name*
@@ -72,3 +52,24 @@ function findLongName(programmingLanguage) {
 }
 console.log(findLongName(programmingLanguage));
 ```
+
+## **Experience**
+---
+#### <span style="color:green">Web Developer</span>
+
+Self Employed:
+2021-present
+* ### Backend and front-end development- Javascript,Axios,MySql,Express,React,HTML,CSS
+* ### Building links between models and describing them through ORM (Sequelize)
+
+## **Tech Skills**
+---
+* #### HTML5, CSS
+* #### MySql, Sequelize
+* #### JavaScript (Basic)
+* #### React, Express.js
+* #### Git
+## **Languages**
+---
+* ### Russian - native
+* ### English - A2
