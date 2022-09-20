@@ -36,7 +36,7 @@ A novice Web developer, mainly in frontend engineering.I am looking for a job in
 ## **Code examples**
 ---
 *Search for the programming language with the longest name*
-```
+```javascript
 const programmingLanguage = [{
     name: 'C#',
     rating: 9,
