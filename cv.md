@@ -22,9 +22,12 @@ A novice Web developer, mainly in frontend engineering.I am looking for a job in
 * ### Step Computer Academy
   * #### <span style="color:green">Web developer courses<span>
   * #### 02/2021-02/2022
+  
 ## **Code examples**
 ---
-*Search for the programming language with the longest name*
+
+*Search for the programming language with the longest name:*
+
 ```javascript
 const programmingLanguage = [{
     name: 'C#',
@@ -39,15 +42,13 @@ const programmingLanguage = [{
     name: 'Java',
     rating: 3,
 },];
-
 function findLongName(programmingLanguage) {
     let longName = 0;
     for (let i in programmingLanguage) {
-        if (programmingLanguage[i].name.length > programmingLanguage[longName].name.length) {
-            longName = i;
+        if (programmingLanguage[i].name.length  > programmingLanguage[longName].name.length) {
+                longName = i;
         }
     }
-
     return programmingLanguage[longName];
 }
 console.log(findLongName(programmingLanguage));
