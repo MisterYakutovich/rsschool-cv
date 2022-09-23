@@ -1,0 +1,264 @@
+
+body 
+{
+    background: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1300px;
+    margin: 10px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.container .left_side
+{
+    position: relative;
+    background:wheat;
+    padding: 40px;
+}
+.container .right_side
+{
+    position: relative;
+    background: white;
+    /*padding: 60px;*/
+    padding: 40px 0px;
+}
+.my_img
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin:auto;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+.my_img img
+{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.contacts_profile
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   /* align-items: center;*/
+    padding-bottom: 20px;
+  /*  border-bottom: 1px solid;*/
+}
+.letter{
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+.letter span
+{
+    color:green;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+.contacts ul
+{
+    position: relative;
+    padding: 0px;
+    top: -40px;
+}
+.contacts ul li
+{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+}
+.contacts ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: green;
+}
+.contacts ul li span
+{
+    font-weight: 300;
+    font-family: URW Chancery L, cursive;
+}
+.about_myself
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid;
+}
+p
+{
+    font-family: URW Chancery L, cursive;
+}
+.title_education
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid;
+}
+.education ul
+{
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+.education  li
+{
+    margin: 30px 0px;
+    position: relative;
+    line-height: 10px;    
+}
+.education ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: green;
+}
+.education ul li  h3{
+    font-family: URW Chancery L, cursive;
+    
+}
+.education ul li .my_job
+{
+    color: green;
+}
+.title_experience
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid;
+}
+.experience ul
+{
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+.experience li
+{
+    margin: 30px 0px;
+    position: relative;
+    line-height: 20px;
+}
+.experience ul li .my_experience
+{
+    color: green;
+}
+.experience ul li h3
+{
+    font-family: URW Chancery L, cursive;
+}
+.experience ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: green;
+}
+.title_skills
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin-top: 66px;
+}
+
+.tech_skills .technology
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 0.9fr;
+     grid-auto-rows: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: URW Chancery L, cursive;
+    
+}
+.tech_skills .technology .level
+{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background:grey;
+}
+.tech_skills .technology .level div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+}
+.code_exemples
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+.code pre code
+{
+   position: absolute;
+   right: 20px;
+}
+.title_languages
+{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid;
+}
+.languages ul 
+{
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+.languages li
+{
+    margin: 30px 0px;
+    position: relative;
+    line-height: 10px;   
+}
+.languages ul li .text_languages
+{
+    display: inline-block;
+    width: 100px;
+    font-size: 22px;
+    color: green;
+    font-family: URW Chancery L, cursive;
+}
+.languages ul li .level_languages
+{
+    display: inline-block;
+    font-size: 18px;
+    font-family: URW Chancery L, cursive;
+}
+
