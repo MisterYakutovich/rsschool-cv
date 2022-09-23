@@ -261,43 +261,43 @@ p
     font-size: 18px;
     font-family: URW Chancery L, cursive;
 }
-.technology .level .level_html
+.tech_skills .technology .level .level_html
 {
     width: 65%;
 }
-.technology .level .level_css
+.tech_skills .technology .level .level_css
 {
     width: 70%;
 }
-.technology .level .level_mysql
+.tech_skills .technology .level .level_mysql
 {
     width: 80%;
 }
-.technology .level .level_sequalize
+.tech_skills .technology .level .level_sequalize
 {
     width: 83%;
 }
-.technology .level .level_javascript
+.tech_skills .technology .level .level_javascript
 {
     width: 70%;
 }
-.technology .level .level_react
+.tech_skills .technology .level .level_react
 {
     width: 75%;
 }
-.technology .level .level_git
+.tech_skills .technology .level .level_git
 {
     width: 80%;
 }
-.orange
+.code pre code .orange
 {
     color: orange;
 }
-.blue
+.code pre code .blue
 {
     color: blue;
 }
-.blueviolet
+.code pre code .blueviolet
 {
     color: blueviolet;
 }
