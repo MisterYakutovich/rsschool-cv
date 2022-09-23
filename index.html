@@ -143,29 +143,29 @@
                         <pre>
                             <code>
                     <span style="color:orange ;">const</span> programmingLanguage = [{
-                        <span style="color: blue;">name: 'C#',
-                        rating: 9,
-                        }, {
-                         name: 'JS',
-                        rating: 8.5,
-                        }, {
-                        name: 'PHP',
-                        rating: 3,
-                        }, {
-                        name: 'Java',
-                        rating: 3,
-                        },</span>];
-                        <span style="color: blue;">function</span> findLongName(programmingLanguage){
-                            let longName = 0;
-                            for (let i in programmingLanguage) {
-                                if (programmingLanguage[i].name.length  
-                                > programmingLanguage[longName].name.length) {
-                                    longName = i;
-                                }
+                          <span style="color: blue;">name: 'C#',
+                          rating: 9,
+                          }, {
+                          name: 'JS',
+                          rating: 8.5,
+                          }, {
+                          name: 'PHP',
+                          rating: 3,
+                          }, {
+                          name: 'Java',
+                          rating: 3,
+                          },</span>];
+                    <span style="color: orange;">function</span> <span style="color:blueviolet">findLongName</span>(programmingLanguage){
+                        <span style="color:orange;">let</span> longName <span style="color:blue">= 0;</span>
+                        <span style="color:orange">for</span> (<span style="color:orange">let</span> i <span style="color:orange">in</span> programmingLanguage) {
+                            <span style="color:orange">if</span> (programmingLanguage[i].<span style="color:blue">name.length</span>  
+                            > programmingLanguage[longName].<span style="color:blue">name.length</span>) {
+                                longName = i;
                             }
-                            return programmingLanguage[longName];
                         }
-                        console.log(findLongName(programmingLanguage));
+                            <span style="color:orange">return</span> programmingLanguage[longName];
+                    }
+                    <span style="color:blueviolet">console.log</span>(findLongName(programmingLanguage));
                             </code>
                         </pre>                   
                 </div>                
