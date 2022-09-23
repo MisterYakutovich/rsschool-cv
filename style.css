@@ -65,10 +65,10 @@ body
     font-size: 40px;
     font-family: Arial, sans-serif;
 }
-.letter span
+.letter_job
 {
     color:green;
-    font-size: 25px;
+    font-size: 35px;
     font-family: Arial, sans-serif;
 }
 .contacts ul
@@ -261,4 +261,43 @@ p
     font-size: 18px;
     font-family: URW Chancery L, cursive;
 }
-
+.technology .level .level_html
+{
+    width: 65%;
+}
+.technology .level .level_css
+{
+    width: 70%;
+}
+.technology .level .level_mysql
+{
+    width: 80%;
+}
+.technology .level .level_sequalize
+{
+    width: 83%;
+}
+.technology .level .level_javascript
+{
+    width: 70%;
+}
+.technology .level .level_react
+{
+    width: 75%;
+}
+.technology .level .level_git
+{
+    width: 80%;
+}
+.orange
+{
+    color: orange;
+}
+.blue
+{
+    color: blue;
+}
+.blueviolet
+{
+    color: blueviolet;
+}
