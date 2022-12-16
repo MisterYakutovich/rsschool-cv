@@ -20,6 +20,7 @@ body
     background: white;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
 }
 .container .left_side
 {
@@ -300,4 +301,42 @@ body
 .code pre code .blueviolet
 {
     color: blueviolet;
+}
+.footer {
+    display: flex;
+    height: 70px;
+    background:wheat;
+    align-items: center;
+    
+}
+.footer_logo {
+    position: relative;
+    width: 80px;
+    height: 60px;
+   /* margin-left: 100px;*/
+   left: 725px;
+}
+.footer_item {
+    margin: 0; /* Обнуляем значение отступов */
+     /* Отображать как строчный элемент */
+    text-align: center;
+}  
+ul.footer_item li {  
+    margin-right: 30px; /* Отступ слева */
+    padding: 3px; 
+}
+.footer_icon {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    left: 770px;
+}
+.year {
+    position: relative;
+    left: 800px;
+    font-weight: 300;
+    font-family: URW Chancery L, cursive;
 }
