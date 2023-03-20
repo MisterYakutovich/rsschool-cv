@@ -26,14 +26,12 @@ body
 {
     position: relative;
     background:wheat;
-    padding: 40px;
+    padding: 0 30px;
 }
 .container .right_side
 {
     position: relative;
-    background: white;
-    /*padding: 60px;*/
-    padding: 40px 0px;
+    background: white; 
 }
 .my_img
 {
@@ -41,7 +39,9 @@ body
     width: 300px;
     height: 300px;
     display:block;
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26.8px;
     border-radius: 50%;
     overflow: hidden;
    
@@ -84,6 +84,13 @@ body
     position: relative;
     margin: 10px 0;
 }
+.contacts ul li a
+{
+   text-decoration: none;
+}
+.contacts .text_contact {
+    color: black;
+}
 .contacts ul li .icon
 {
     display: inline-block;
@@ -114,6 +121,7 @@ body
     font-family: Arial, sans-serif;
     border-bottom: 2px solid;
 }
+
 .education ul
 {
     list-style: none;
@@ -122,9 +130,16 @@ body
 }
 .education  li
 {
-    margin: 30px 0px;
+    margin: 65px 0px; /*30px 0*/
     position: relative;
     line-height: 10px;    
+}
+.education ul li:first-child {
+    margin-top: 30px;
+}
+
+.education ul li p .id {
+    color: green;
 }
 .education ul li .icon
 {
@@ -137,6 +152,31 @@ body
     font-family: URW Chancery L, cursive;
     
 }
+#button_id {
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 0;
+    padding: 7px 0px; 
+    text-decoration: none;
+    background: #FFFFFF;
+    margin-top: 0px;
+    box-sizing: border-box;
+    border: 2px solid green;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:  URW Chancery L, cursive;
+    font-weight: bold;
+}
+
 .education ul li .my_job
 {
     color: green;
@@ -164,10 +204,17 @@ body
 {
     color: green;
 }
-.experience ul li h3
+/*.experience ul li h3
 {
     font-family: URW Chancery L, cursive;
+}*/
+.experience ul li p
+{
+    font-family: URW Chancery L, cursive;
+    font-size: 1.17em;
+    font-weight: bold;
 }
+
 .experience ul li .icon
 {
     display: inline-block;
@@ -227,7 +274,8 @@ body
 .code pre code
 {
    position: absolute;
-   right: 20px;
+   right: 45px;
+   max-width: 140%;
 }
 .title_languages
 {
@@ -302,19 +350,52 @@ body
 {
     color: blueviolet;
 }
+.code {
+    margin-top: 60px;
+}
+
+/*.certificate {
+   
+    font-family: Arial, sans-serif;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin-top: 30px;
+}
+.my_certificate ul li {
+    list-style: none;
+    display: inline-block;
+}
+.my_certificate ul li:first-child {
+    margin-right: 150px;
+}
+
+.my_certificate ul {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 1.25rem;
+    border: 1px solid #E3E1D5;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}*/
+
 .footer {
     display: flex;
     height: 70px;
     background:wheat;
     align-items: center;
-    
+    flex-wrap: nowrap;
+    justify-content: space-around;   
 }
 .footer_logo {
     position: relative;
     width: 80px;
     height: 60px;
    /* margin-left: 100px;*/
-   left: 725px;
+  /* left: 725px;*/
 }
 .footer_item {
     margin: 0; /* Обнуляем значение отступов */
@@ -332,11 +413,16 @@ ul.footer_item li {
     font-size: 35px;
     color: black;
     text-align: center;
-    left: 770px;
+   /* left: 770px;*/
 }
 .year {
     position: relative;
-    left: 800px;
+  /*  left: 800px;*/
     font-weight: 300;
     font-family: URW Chancery L, cursive;
+}
+@media screen and (max-width: 820px){
+    .my_self  {
+        font-size: 12px;
+    }
 }

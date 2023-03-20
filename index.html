@@ -10,7 +10,7 @@
               referrerpolicy="no-referrer">
     </head>
     <body>
-        <div class="container">
+        <main class="container">
             <div class="left_side">
                 <div class="contacts_profile">
                     <h1 class="letter">Pavel Yakutovich</h1>
@@ -48,18 +48,27 @@
                 </div>
                 <div class="education">
                     <h1 class="title_education">Education</h1>
-                    <ul>
-                        <li>
+                    <ul class="education_items">
+                        <li class="item">
                             <h3>Belarusian Polytechnic College in Grodno</h3>
                             <h3 class="my_job">Technical and mechanical faculty</h3>
                             <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
                             <span>09/2001-06/2005</span>
                         </li>
-                        <li>
+                        <li class="item">
                             <h3>Step Computer Academy</h3>
                             <h3 class="my_job">Web developer courses</h3>
                             <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
                             <span>02/2021-02/2022</span>
+                            <p><span class="id">ID</span> GRY-009216</p>
+                            <a href="https://diploma.itstep.org/" target="_blank" class="button">accreditation</a>
+                        </li>
+                        <li class="item">
+                            <h3>THE ROLLING SCOPES SCHOOL</h3>
+                            <h3 class="my_job">Web developer courses</h3>
+                            <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                            <span>2023-2023</span>
+                            <a href="https://app.rs.school/certificate/fkcab3id" target="_blank" class="button" id="button_id">accreditation</a>                             
                         </li>
                     </ul>
                 </div>
@@ -73,8 +82,8 @@
                             <span>2021-present</span>
                         </li>
                         <li>
-                            <h3>Backend and front-end development- Javascript,Axios,MySql,Express,React,HTML,CSS</h3>
-                            <h3>Building links between models and describing them through ORM (Sequelize)</h3>
+                            <p>Backend and front-end development- Javascript,React,HTML,CSS</p>
+                            <p>Building links between models and describing them through ORM (Sequelize)</p>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +111,7 @@
                     <h4>HTML5</h4>
                     <div class="level">
                         <div class="level_html">
-                            <b>65%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -110,7 +119,7 @@
                     <h4>CSS</h4>
                     <div class="level">
                         <div class="level_css">
-                            <b>70%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -118,7 +127,7 @@
                     <h4>MySql</h4>
                     <div class="level">
                         <div class="level_mysql">
-                            <b>80%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -126,7 +135,7 @@
                     <h4>Sequalize</h4>
                     <div class="level">
                         <div class="level_sequalize">
-                            <b>83%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -134,7 +143,7 @@
                     <h4>JavaScript</h4>
                     <div class="level">
                         <div class="level_javascript">
-                            <b>70%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -142,7 +151,7 @@
                     <h4>React</h4>
                     <div class="level">
                         <div class="level_react">
-                            <b>75%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
@@ -150,16 +159,31 @@
                     <h4>Git</h4>
                     <div class="level">
                         <div class="level_git">
-                            <b>80%</b>
+                            <b></b>
                         </div>
                     </div>
                    </div>
                 </div>
+              <!---  <div class="my_certificate">
+                    <h1 class="certificate">My certificates</h1>
+                    <ul class="certificate_items">
+                        <li>
+                            <a href="https://app.rs.school/certificate/fkcab3id">
+                                <img src="https://rs.school/images/rs_school_js.svg" class="footer_logo" alt="rs_school">
+                            </a>                           
+                        </li>
+                        <li> 
+                            <a href="https://diploma.itstep.org/">
+                                <img src="./img_logo/step_academy.jpg" class="footer_logo" alt="step_academy">
+                            </a>   
+                        </li>
+                    </ul>
+                </div> -->
                 <div class="code">
                     <h1 class="code_exemples">Code example</h1>
                         <pre>
                             <code>
-                            <span class="orange">const</span> programmingLanguage = [{
+                                <span class="orange">const</span> programmingLanguage = [{
                                     <span class="blue">name: 'C#',
                                     rating: 9,
                                     }, {
@@ -172,32 +196,32 @@
                                     name: 'Java',
                                     rating: 3,
                                     },</span>];
-                              <span class="orange">function</span><span class="blueviolet"> findLongName</span>(programmingLanguage){
-                                  <span class="orange">let</span> longName <span class="blue">= 0;</span>
-                                  <span class="orange">for</span> (<span class="orange">let</span> i <span class="orange">in</span> programmingLanguage) {
-                                      <span class="orange">if</span> (programmingLanguage[i].<span class="blue">name.length &gt; </span>
-                                       programmingLanguage[longName].<span class="blue">name.length</span>) {
+                                 <span class="orange">function</span><span class="blueviolet"> findLongName</span>(programmingLanguage){
+                                    <span class="orange">let</span> longName <span class="blue">= 0;</span>
+                                    <span class="orange">for</span> (<span class="orange">let</span> i <span class="orange">in</span> programmingLanguage) {
+                                        <span class="orange">if</span> (programmingLanguage[i].<span class="blue">name.length &gt; </span>
+                                       programmingLanguage[longName].<span class="blue">name.length</span>){
                                           longName = i;
-                                      }
-                                  }
+                                        }
+                                    }
                                       <span class="blue">return</span> programmingLanguage[longName];
-                              }
-                              <span class="blueviolet">console.log</span>(findLongName(programmingLanguage));
+                                }
+                                 <span class="blueviolet">console.log</span>(findLongName(programmingLanguage));
                             </code>
                         </pre>
                 </div>
             </div>
             <footer class="footer">
                 <div class="footer_item">
-                    <a href="https://github.com/MisterYakutovich" class="footer_icon"><i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/MisterYakutovich" target="_blank" class="footer_icon"><i class="fa-brands fa-github"></i></a>
                 </div>
                <div>
-                    <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" class="footer_logo"></a>         
+                    <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" class="footer_logo" alt="rs.school"></a>
                 </div>
                 <div>
                     <span class="year">2022</span>
                 </div>
             </footer>
-        </div>
+        </main>
     </body>
 </html>
