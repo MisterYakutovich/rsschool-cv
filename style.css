@@ -16,7 +16,7 @@ body
     width: 100%;
     max-width: 1200px;
     min-height: 1300px;
-    margin: 10px;
+    padding: 10px;
     background: white;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -232,20 +232,34 @@ body
     flex-direction: column;
     display: flex;
     margin-top: 66px;
+   
+}
+.tech_skills {
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 .tech_skills .technology
 {
     position: relative;
-    width: 100%;
+    text-align: center;
+   /* width: 100%;
     display: grid;
     grid-template-columns: 100px 0.9fr;
      grid-auto-rows: 40px;
     justify-content: center;
-    align-items: center;
-    font-family: URW Chancery L, cursive;
-    
+    align-items: center;*/
+    font-family: URW Chancery L, cursive; 
 }
+
+.tech_skills .technology h4 {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-out;
+}
+
 .tech_skills .technology .level
 {
     position: relative;
@@ -351,10 +365,10 @@ body
     color: blueviolet;
 }
 .code {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
-/*.certificate {
+.prodjects {
    
     font-family: Arial, sans-serif;
     align-items: center;
@@ -363,24 +377,27 @@ body
     display: flex;
     margin-top: 30px;
 }
-.my_certificate ul li {
+.my_prodjects ul li {
     list-style: none;
     display: inline-block;
+    margin-right: 50px;
 }
-.my_certificate ul li:first-child {
+/*.my_prodjects ul li:first-child {
     margin-right: 150px;
+}*/
+.prodjects_items{
+    display: flex;
 }
-
-.my_certificate ul {
+.my_prodjects ul {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 1.25rem;
     border: 1px solid #E3E1D5;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
    
-}*/
+}
 
 .footer {
     display: flex;
@@ -390,12 +407,44 @@ body
     flex-wrap: nowrap;
     justify-content: space-around;   
 }
+.prodject_logo_momentum {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+   /* margin-left: 100px;*/
+  /* left: 725px;*/
+}
+.prodject_logo_shelter{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+}
+.prodject_logo_plants {
+    position: relative;
+    width: 110px;
+    height: 80px;
+    transition: 1s;
+}
+.prodject_logo_plants:hover {
+    transform: scale(1.2);
+}
+.prodject_logo_shelter:hover {
+    transform: scale(1.2);
+}
+.prodject_logo_momentum:hover {
+    transform: scale(1.2);
+}
 .footer_logo {
     position: relative;
     width: 80px;
-    height: 60px;
-   /* margin-left: 100px;*/
-  /* left: 725px;*/
+    height: 80px;
+    transition: 1s;
+   
+}
+.footer_logo:hover{
+    transform: scale(1.2);
 }
 .footer_item {
     margin: 0; /* Обнуляем значение отступов */
@@ -413,7 +462,11 @@ ul.footer_item li {
     /*font-size: 35px;*/
     color: black;
     text-align: center;
+    transition: 1s;
    /* left: 770px;*/
+}
+.footer_icon:hover{
+    transform: scale(1.2);
 }
 .year {
     position: relative;
