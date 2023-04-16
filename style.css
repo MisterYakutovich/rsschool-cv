@@ -474,3 +474,83 @@ ul.footer_item li {
     font-weight: 300;
     font-family: URW Chancery L, cursive;
 }
+@media screen and (max-width: 925px){
+    .my_self h3 {
+        font-size: 15px;
+    }
+    .letter {
+        font-size: 30px;
+    }
+    .letter_job {
+        font-size: 30px;
+    }
+    .about_myself {
+        font-size: 30px;
+    }
+    .education ul li h3{
+        font-size: 15px;
+    }
+    .education ul li .my_job{
+        font-size: 15px;
+    }
+    .education li span{
+        font-size: 15px;
+    }
+    .education ul li p {
+        font-size: 15px;
+    }
+    .title_education {
+        font-size: 30px;
+    }
+    .experience li {
+        font-size: 15px;
+    }
+    .title_experience {
+        font-size: 30px;
+    }
+    .experience ul li p{
+        font-size: 15px;
+    }
+    .languages ul li .text_languages {
+        font-size: 17px;
+    }
+    .languages ul li .level_languages {
+        font-size: 17px;
+    }
+    .title_languages {
+        font-size: 30px;
+    }
+    .title_skills {
+        font-size: 30px;
+    }
+    .prodjects {
+        font-size: 30px;
+    }
+    .code_exemples {
+        font-size: 30px;
+    }
+    .container .left_side{
+        padding: 10px;
+    }
+    /*right part*/
+    .tech_skills .technology{
+        margin-bottom: -10px;
+    }
+    .my_prodjects ul{
+        width: 350px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 925px){
+    .my_prodjects ul{
+        width: 300px;
+    }
+    .my_prodjects ul li{
+        margin-right: 30px;
+    }
+    .code pre code{
+        right: -10px;
+        max-width: 170%;
+    }
+}
