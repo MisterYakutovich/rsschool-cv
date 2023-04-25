@@ -22,99 +22,73 @@ body
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
 }
-.container .left_side
+.container .left-side
 {
     position: relative;
     background:wheat;
     padding: 0 30px;
 }
-.container .right_side
-{
-    position: relative;
-    background: white; 
-}
-.my_img
-{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 26.8px;
-    border-radius: 50%;
-    overflow: hidden;
-   
-}
-.my_img img
-{
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-   
-}
-.contacts_profile
+
+.profile
 {
     position: relative;
     display: flex;
     flex-direction: column;
-   /* align-items: center;*/
-    padding-bottom: 20px;
-  /*  border-bottom: 1px solid;*/
 }
-.letter{
+.profile__letter{
     font-size: 40px;
     font-family: Arial, sans-serif;
+    margin: 20px 0;
 }
-.letter_job
+.profile__job
 {
     color:green;
     font-size: 35px;
     font-family: Arial, sans-serif;
+    margin: 20px 0;
 }
-.contacts ul
+.contacts__list
 {
     position: relative;
     padding: 0px;
-    top: -40px;
+    margin: 0;
 }
-.contacts ul li
+.contacts__item
 {
     list-style: none;
     position: relative;
     margin: 10px 0;
 }
-.contacts ul li a
+.contacts-item__link
 {
    text-decoration: none;
 }
-.contacts .text_contact {
-    color: black;
-}
-.contacts ul li .icon
+
+.contacts-item__icon
 {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: green;
 }
-.contacts ul li span
+.contacts-item__text
 {
     font-weight: 300;
     font-family: URW Chancery L, cursive;
+    color: black;
 }
-.about_myself
+.my-self__about
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     border-bottom: 2px solid;
 }
-.my_self h3
+.my-self__text
 {
     font-family: URW Chancery L, cursive;
 }
-.title_education
+.education__title
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -122,41 +96,39 @@ body
     border-bottom: 2px solid;
 }
 
-.education ul
+.education__list
 {
     list-style: none;
     position: relative;
     padding: 0px;
 }
-.education  li
+.education__item
 {
     margin: 65px 0px; /*30px 0*/
     position: relative;
-    line-height: 10px;    
+    line-height: 10px;   
+    font-family: URW Chancery L, cursive; 
 }
-.education ul li:first-child {
+.education__item:first-child {
     margin-top: 30px;
 }
 
-.education ul li p .id {
+.education-item__id {
     color: green;
+    margin-right: 10px;
 }
-.education ul li .icon
+.education-item__icon
 {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: green;
 }
-.education ul li  h3{
-    font-family: URW Chancery L, cursive;
-    
-}
-#button_id {
+#button-id {
     margin-top: 35px;
 }
 
-.button {
+.education-item__button {
     display: inline-block;
     position: absolute;
     width: 150px;
@@ -177,52 +149,75 @@ body
     font-weight: bold;
 }
 
-.education ul li .my_job
+.education-item__job
 {
     color: green;
 }
-.title_experience
+.experience__title
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     border-bottom: 2px solid;
 }
-.experience ul
+.experience__list
 {
     list-style: none;
     position: relative;
     padding: 0px;
+    font-family: URW Chancery L, cursive;
 }
-.experience li
+.experience__item
 {
     margin: 30px 0px;
     position: relative;
     line-height: 20px;
 }
-.experience ul li .my_experience
+.experience-item__myjob
 {
     color: green;
 }
-/*.experience ul li h3
-{
-    font-family: URW Chancery L, cursive;
-}*/
-.experience ul li p
+.experience-item__p
 {
     font-family: URW Chancery L, cursive;
     font-size: 1.17em;
     font-weight: bold;
 }
-
-.experience ul li .icon
+.experience-item__icon
 {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: green;
 }
-.title_skills
+
+/*--right section---*/
+.container .right-side
+{
+    position: relative;
+    background: white; 
+}
+.my-img
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26.8px;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+.my-img img
+{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.tech-skills__title
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -234,13 +229,13 @@ body
     margin-top: 66px;
    
 }
-.tech_skills {
+.tech-skills {
     display: grid;
     grid-template-columns: 1fr;
 
 }
 
-.tech_skills .technology
+.tech-skills__technology
 {
     position: relative;
     text-align: center;
@@ -253,21 +248,21 @@ body
     font-family: URW Chancery L, cursive; 
 }
 
-.tech_skills .technology h4 {
+.tech-skills__technology h4 {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.2s ease-out;
 }
 
-.tech_skills .technology .level
+.tech-skills__technology .level
 {
     position: relative;
     width: 100%;
     height: 20px;
     background:grey;
 }
-.tech_skills .technology .level div
+.tech-skills__technology .level div
 {
     position: absolute;
     top: 0;
@@ -275,42 +270,43 @@ body
     height: 100%;
     background: red;
 }
-.code_exemples
+.code-exemples
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    align-items: center;
     position: relative;
-    flex-direction: column;
-    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .code pre code
 {
-   position: absolute;
-   right: 45px;
-   max-width: 140%;
+    position: relative;
+    right: 60px;
+    max-width: 100%;
 }
-.title_languages
+.languages__title
 {
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     border-bottom: 2px solid;
 }
-.languages ul 
+.languages__list
 {
     list-style: none;
     position: relative;
     padding: 0px;
 }
-.languages li
+.languages__item
 {
     margin: 30px 0px;
     position: relative;
     line-height: 10px;   
 }
-.languages ul li .text_languages
+.languages__item-text
 {
     display: inline-block;
     width: 100px;
@@ -318,39 +314,11 @@ body
     color: green;
     font-family: URW Chancery L, cursive;
 }
-.languages ul li .level_languages
+.languages__item-leve
 {
     display: inline-block;
     font-size: 18px;
     font-family: URW Chancery L, cursive;
-}
-.tech_skills .technology .level .level_html
-{
-    width: 65%;
-}
-.tech_skills .technology .level .level_css
-{
-    width: 70%;
-}
-.tech_skills .technology .level .level_mysql
-{
-    width: 80%;
-}
-.tech_skills .technology .level .level_sequalize
-{
-    width: 83%;
-}
-.tech_skills .technology .level .level_javascript
-{
-    width: 70%;
-}
-.tech_skills .technology .level .level_react
-{
-    width: 75%;
-}
-.tech_skills .technology .level .level_git
-{
-    width: 80%;
 }
 .code pre code .orange
 {
@@ -360,6 +328,14 @@ body
 {
     color: blue;
 }
+.code pre code .green
+{
+    color: green;
+}
+.code pre code .red
+{
+    color: rgb(226, 107, 171)
+}
 .code pre code .blueviolet
 {
     color: blueviolet;
@@ -368,7 +344,7 @@ body
     margin-top: 40px;
 }
 
-.prodjects {
+.my-prodjects__title {
    
     font-family: Arial, sans-serif;
     align-items: center;
@@ -377,18 +353,13 @@ body
     display: flex;
     margin-top: 30px;
 }
-.my_prodjects ul li {
+.my-prodjects__item {
     list-style: none;
     display: inline-block;
     margin-right: 50px;
 }
-/*.my_prodjects ul li:first-child {
-    margin-right: 150px;
-}*/
-.prodjects_items{
+.my-prodjects__list {
     display: flex;
-}
-.my_prodjects ul {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -396,9 +367,7 @@ body
     border: 1px solid #E3E1D5;
     margin-left: 20px;
     margin-right: 10px;
-   
 }
-
 .footer {
     display: flex;
     height: 70px;
@@ -407,7 +376,7 @@ body
     flex-wrap: nowrap;
     justify-content: space-around;   
 }
-.prodject_logo_momentum {
+.prodject-logo-momentum {
     position: relative;
     width: 70px;
     height: 70px;
@@ -415,142 +384,177 @@ body
    /* margin-left: 100px;*/
   /* left: 725px;*/
 }
-.prodject_logo_shelter{
+.prodject-logo-shelter{
     position: relative;
     width: 70px;
     height: 70px;
     transition: 1s;
 }
-.prodject_logo_plants {
+.prodject-logo-plants {
     position: relative;
     width: 110px;
     height: 80px;
     transition: 1s;
 }
-.prodject_logo_plants:hover {
+.prodject-logo-plants:hover {
     transform: scale(1.2);
 }
-.prodject_logo_shelter:hover {
+.prodject-logo-shelter:hover {
     transform: scale(1.2);
 }
-.prodject_logo_momentum:hover {
+.prodject-logo-momentum:hover {
     transform: scale(1.2);
 }
-.footer_logo {
+.footer-item__logo {
     position: relative;
     width: 80px;
     height: 80px;
     transition: 1s;
    
 }
-.footer_logo:hover{
+.footer-item__logo:hover{
     transform: scale(1.2);
 }
-.footer_item {
-    margin: 0; /* Обнуляем значение отступов */
-     /* Отображать как строчный элемент */
+.footer-item {
+    margin: 0;
     text-align: center;
 }  
-ul.footer_item li {  
-    margin-right: 30px; /* Отступ слева */
-    padding: 3px; 
-}
-.footer_icon {
+.footer-item__icon {
     position: relative;
     display: inline-block;
-    width: 10px;
-    /*font-size: 35px;*/
     color: black;
     text-align: center;
     transition: 1s;
-   /* left: 770px;*/
 }
-.footer_icon:hover{
+.footer-item__icon:hover{
     transform: scale(1.2);
 }
-.year {
+.footer-item__year {
     position: relative;
   /*  left: 800px;*/
     font-weight: 300;
     font-family: URW Chancery L, cursive;
 }
 @media screen and (max-width: 925px){
-    .my_self h3 {
+    .my-self__text {
         font-size: 15px;
     }
-    .letter {
+    .profile__letter {
         font-size: 30px;
     }
-    .letter_job {
+    .profile__job {
         font-size: 30px;
     }
-    .about_myself {
+    .my-self__about {
         font-size: 30px;
     }
-    .education ul li h3{
+    .education-item__title{
         font-size: 15px;
     }
-    .education ul li .my_job{
+    .education-item__job{
         font-size: 15px;
     }
-    .education li span{
+    .education-item__data{
         font-size: 15px;
     }
-    .education ul li p {
+    .education-item__p{
         font-size: 15px;
     }
-    .title_education {
+    .education__title {
         font-size: 30px;
     }
-    .experience li {
+    .experience__item {
         font-size: 15px;
     }
-    .title_experience {
+    .experience__title {
         font-size: 30px;
     }
-    .experience ul li p{
+    .experience-item__p{
         font-size: 15px;
     }
-    .languages ul li .text_languages {
+    .languages__item-text {
         font-size: 17px;
     }
-    .languages ul li .level_languages {
+    .languages__item-leve {
         font-size: 17px;
     }
-    .title_languages {
+    .languages__title {
         font-size: 30px;
     }
-    .title_skills {
+    .tech-skills__title {
         font-size: 30px;
     }
-    .prodjects {
+    .my-prodjects__title {
         font-size: 30px;
     }
     .code_exemples {
         font-size: 30px;
     }
-    .container .left_side{
+    .container .left-side{
         padding: 10px;
     }
     /*right part*/
-    .tech_skills .technology{
+    .tech-skills__technology{
         margin-bottom: -10px;
     }
-    .my_prodjects ul{
+    .my-prodjects__list {
         width: 350px;
         padding-left: 10px;
         padding-right: 10px;
     }
 }
 @media screen and (max-width: 925px){
-    .my_prodjects ul{
+    .my-prodjects__list {
         width: 300px;
     }
-    .my_prodjects ul li{
+    .my-prodjects__item {
         margin-right: 30px;
     }
     .code pre code{
-        right: -10px;
-        max-width: 170%;
+        position: relative;
+        right: 150px;
+        width: 300px;
+        display: block;
     }
+    
+    .my_img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 700px){
+    .code pre code{
+        right: 200px;
+       
+    }
+    .my-prodjects__list {
+        width: 250px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prodject-logo-momentum {
+        width: 50px;
+        height: 50px;
+    }
+    .prodject-logo-plants{
+        width: 80px;
+        height: 70px;
+    }
+    .prodject-logo-shelter{
+        width: 50px;
+        height: 50px;
+    }
+    .my-prodjects__item {
+        margin-left: 20px;
+        margin-right: 0;
+
+    }
+    .my-prodjects__title {
+        margin-bottom: 30px;
+    }
+    .education ul li h3{
+        line-height: 18px;
+    }
+   
 }

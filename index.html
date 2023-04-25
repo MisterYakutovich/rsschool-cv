@@ -1,195 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>CV</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-              integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-              crossorigin="anonymous"
-              referrerpolicy="no-referrer">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+  </head>
     <body>
-        <main class="container">
-            <div class="left_side">
-                <div class="contacts_profile">
-                    <h1 class="letter">Pavel Yakutovich</h1>
-                    <h1 class="letter_job">Web Developer</h1>
-                </div>
-                <div class="contacts">
-                    <ul>
-                        <li>
-                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                           <span class="text_contact">Phone: +375298842839</span>
-                        </li>
+      <main class="container">
+        <div class="left-side">
+          <div class="profile">
+            <h1 class="profile__letter">Pavel Yakutovich</h1>
+            <h2 class="profile__job">Web Developer</h2>
+          </div>
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts-item">
+                <span class="contacts-item__icon"><i class="fa-solid fa-phone"></i></span>
+                <span class="contacts-item__text">Phone: +375298842839</span>
+              </li>
                       <!-- <li>
                             <span class="icon"><i class="fa-brands fa-github"></i></span>
                             <a href="https://github.com/MisterYakutovich"><span class="text_contact">GitHub: MisterYakutovich</span></a>
                         </li>--> 
-                        <li>
-                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                            <span class="text_contact">E-mail: pavelyakutovich@gmail.com</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa-brands fa-telegram"></i></span>
-                            <a href="https://t.me/pashaforever1571"><span class="text_contact">Telegram: Pavel Yakutovich</span></a>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
-                            <a href="https://www.linkedin.com/in/pavel-yakutovich-10b97a22a/"><span class="text_contact">Linkedln</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="my_self">
-                    <h1 class="about_myself">About Myself</h1>
-                    <h3>A novice Web developer, mainly in frontend engineering.
+              <li class="contacts__item contacts-item">
+                <span class="contacts-item__icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="contacts-item__text">E-mail: pavelyakutovich@gmail.com</span>
+              </li>
+              <li class="contacts__item contacts-item">
+                <span class="contacts-item__icon"><i class="fa-brands fa-telegram"></i></span>
+                <a class="contacts-item__link" href="https://t.me/pashaforever1571"><span class="contacts-item__text">Telegram: Pavel Yakutovich</span></a>
+              </li>
+              <li class="contacts__item contacts-item">
+                <span class="contacts-item__icon"><i class="fa-brands fa-linkedin"></i></span>
+                <a class="contacts-item__link" href="https://www.linkedin.com/in/pavel-yakutovich-10b97a22a/"><span class="contacts-item__text">Linkedln</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="my-self">
+            <h1 class="my-self__about">About Myself</h1>
+            <h3 class="my-self__text">A novice Web developer, mainly in frontend engineering.
                         I am looking for a job in a company where i can apply my skills in web development.
-                    </h3>
-                </div>
-                <div class="education">
-                    <h1 class="title_education">Education</h1>
-                    <ul class="education_items">
-                        <li class="item">
-                            <h3>Belarusian Polytechnic College in Grodno</h3>
-                            <h3 class="my_job">Technical and mechanical faculty</h3>
-                            <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                            <span>09/2001-06/2005</span>
-                        </li>
-                        <li class="item">
-                            <h3>Step Computer Academy</h3>
-                            <h3 class="my_job">Web developer courses</h3>
-                            <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                            <span>02/2021-02/2022</span>
-                            <p><span class="id">ID</span> GRY-009216</p>
-                            <a title="step academy" href="https://diploma.itstep.org/" target="_blank" class="button">accreditation</a>
-                        </li>
-                        <li class="item">
-                            <h3>THE ROLLING SCOPES SCHOOL</h3>
-                            <h3 class="my_job">Web developer courses</h3>
-                            <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                            <span>2023-2023</span>
-                            <a title="rs school" href="https://app.rs.school/certificate/fkcab3id" target="_blank" class="button" id="button_id">accreditation</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="experience">
-                    <h1 class="title_experience">Experience</h1>
-                    <ul>
-                        <li>
-                            <h3>Web Developer</h3>
-                            <h3 class="my_experience">Self Employed</h3>
-                            <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
-                            <span>2021-present</span>
-                        </li>
-                        <li>
-                            <p>Backend and front-end development- Javascript,React,HTML,CSS</p>
-                            <p>Building links between models and describing them through ORM (Sequelize)</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="languages">
-                    <h1 class="title_languages">Languages</h1>
-                    <ul>
-                        <li>
-                            <span class="text_languages">Russian</span>
-                            <span class="level_languages">Native</span>
-                        </li>
-                        <li>
-                            <span class="text_languages">English</span>
-                            <span class="level_languages">A2</span>
-                        </li>
-                    </ul>
-                </div>
+            </h3>
+          </div>
+          <div class="education">
+            <h1 class="education__title">Education</h1>
+            <ul class="education__list">
+              <li class="education__item education-item">
+                <h3 class="education-item__title">Belarusian Polytechnic College in Grodno</h3>
+                <h3 class="education-item__job">Technical and mechanical faculty</h3>
+                <span class="education-item__icon"><i class="fa-regular fa-calendar-days"></i></span>
+                <span class="education-item__data">09/2001-06/2005</span>
+              </li>
+              <li class="education__item education-item">
+                <h3 class="education-item__title">Step Computer Academy</h3>
+                <h3 class="education-item__job">Web developer courses</h3>
+                <span class="education-item__icon"><i class="fa-regular fa-calendar-days"></i></span>
+                <span class="education-item__data">02/2021-02/2022</span>
+                <p class="education-item__p"><span class="education-item__id">ID</span>  GRY-009216</p>
+                <a title="step academy" href="https://diploma.itstep.org/" target="_blank" class="education-item__button">accreditation</a>
+              </li>
+              <li class="education__item education-item">
+                <h3 class="education-item__title">THE ROLLING SCOPES SCHOOL</h3>
+                <h3 class="education-item__job">Web developer courses</h3>
+                <span class="education-item__icon"><i class="fa-regular fa-calendar-days"></i></span>
+                <span class="education-item__data">2023-2023</span>
+                <a title="rs school" href="https://app.rs.school/certificate/fkcab3id" target="_blank" class="education-item__button" id="button-id">accreditation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="experience">
+            <h1 class="experience__title">Experience</h1>
+            <ul class="experience__list">
+              <li class="experience__item experience-item">
+                <h3 class="experience-item__title">Web Developer</h3>
+                <h3 class="experience-item__myjob">Self Employed</h3>
+                <span class="experience-item__icon"><i class="fa-regular fa-calendar-days"></i></span>
+                <span class="experience-item__data">2021-present</span>
+              </li>
+              <li class="experience__item experience-item">
+                <p class="experience-item__p">Backend and front-end development- Javascript,React,HTML,CSS</p>
+                <p class="experience-item__p">Building links between models and describing them through ORM (Sequelize)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="languages">
+          <h1 class="languages__title">Languages</h1>
+            <ul class="languages__list">
+              <li class="languages__item">
+                <span class="languages__item-text">Russian</span>
+                <span class="level_languages">Native</span>
+              </li>
+              <li class="languages__item">
+                <span class="languages__item-text">English</span>
+                <span class="languages__item-level">A2</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="my-img">
+            <img src="./img/my_photo.jpg" alt="photo">
+          </div>
+          <div class="tech-skills">
+          <h1 class="tech-skills__title">Tech Skills</h1>
+          <div class="tech-skills__technology">
+            <h4>HTML5</h4>
+          </div>
+          <div class="tech-skills__technology">
+            <h4>CSS</h4>
             </div>
-            <div class="right_side">
-                <div class="my_img">
-                    <img src="./img/my_photo.jpg" alt="photo">
-                </div>
-                <div class="tech_skills">
-                    <h1 class="title_skills">Tech Skills</h1>
-                   <div class="technology">
-                    <h4>HTML5</h4>
-                   <!-- <div class="level">
-                        <div class="level_html">
-                            <b>70%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>CSS</h4>
-                    <!-- <div class="level">
-                        <div class="level_css">
-                            <b>70%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>MySql</h4>
-                    <!-- <div class="level">
-                        <div class="level_mysql">
-                            <b>50%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>Sequalize</h4>
-                   <!--  <div class="level">
-                        <div class="level_sequalize">
-                            <b>50%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>JavaScript</h4>
-                   <!--  <div class="level">
-                        <div class="level_javascript">
-                            <b>70%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>React</h4>
-                  <!--   <div class="level">
-                        <div class="level_react">
-                            <b>50%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                   <div class="technology">
-                    <h4>Git</h4>
-                   <!--  <div class="level">
-                        <div class="level_git">
-                            <b>60%</b>
-                        </div>
-                    </div>-->
-                   </div>
-                </div>
-                  <div class="my_prodjects">
-                    <h1 class="prodjects">My projects</h1>
-                    <ul class="prodjects_items">
-                        <li>
-                            <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFEPRESCHOOL2022Q4/momentum/" target="_blank">
-                                <img src="./img_logo/favicon.ico" class="prodject_logo_momentum" alt="momentum">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFEPRESCHOOL2022Q4/plants/" target="_blank">
-                                <img src="./img_logo/logo.svg" class="prodject_logo_plants" alt="plants">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFE2023Q1/shelter/pages/main/index.html" target="_blank">
-                                <img src="./img_logo/pets-jennifer.jpg" class="prodject_logo_shelter" alt="shelter">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="code">
-                    <h1 class="code_exemples">Code example</h1>
-                        <pre>
-                            <code>
-                                <span class="orange">const</span> programmingLanguage = [{
+          <div class="tech-skills__technology">
+            <h4>MySql</h4>
+          </div>
+          <div class="tech-skills__technology">
+            <h4>Sequalize</h4>
+          </div>
+          <div class="tech-skills__technology">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="tech-skills__technology">
+            <h4>React</h4>
+          </div>
+          <div class="tech-skills__technology">
+            <h4>Git</h4>
+          </div>
+          </div>
+          <div class="my-prodjects">
+            <h1 class="my-prodjects__title">My projects</h1>
+              <ul class="my-prodjects__list">
+                <li class="my-prodjects__item">
+                  <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFEPRESCHOOL2022Q4/momentum/" target="_blank">
+                    <img src="./img_logo/favicon.ico" class="prodject-logo-momentum" alt="momentum">
+                  </a>
+                </li>
+                <li class="my-prodjects__item">
+                  <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFEPRESCHOOL2022Q4/plants/" target="_blank">
+                    <img src="./img_logo/logo.svg" class="prodject-logo-plants" alt="plants">
+                  </a>
+                </li>
+                <li class="my-prodjects__item">
+                  <a href="https://rolling-scopes-school.github.io/misteryakutovich-JSFE2023Q1/shelter/pages/main/index.html" target="_blank">
+                    <img src="./img_logo/pets-jennifer.jpg" class="prodject-logo-shelter" alt="shelter">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="code">
+              <h1 class="code-exemples">Code example</h1>
+              <pre>
+                <code>
+                                <span class="blue">function</span> <span class="orange">reverse</span><span class="blueviolet">(n)</span> {
+                                    <span class="blueviolet">n=Math</span><span class="orange">.abs(n)</span>
+                                    <span class="blueviolet">n</span><span class="green">=String(n)</span>
+                                    <span class="red">return</span> <span class="green">Number</span>(<span class="blueviolet">n</span><span class="orange">.split</span>("")
+                                                   <span class="orange">.filter</span>(<span class="blueviolet">i=>i</span>!==0)
+                                                   <span class="orange">.reverse</span>()
+                                                   <span class="orange">.join</span>(""))
+                                }
+                                <span class="blue">console.log</span>(<span class="orange">reverse</span>(-450)) //54
+                        <!--        <span class="orange">const</span> programmingLanguage = [{
                                     <span class="blue">name: 'C#',
                                     rating: 9,
                                     }, {
@@ -212,26 +186,26 @@
                                     }
                                       <span class="blue">return</span> programmingLanguage[longName];
                                 }
-                                 <span class="blueviolet">console.log</span>(findLongName(programmingLanguage));
-                            </code>
-                        </pre>
-                </div>
+                                 <span class="blueviolet">console.log</span>(findLongName(programmingLanguage));-->
+                </code>
+              </pre>
             </div>
-            <footer class="footer">
-                <div class="footer_item">
-                    <a title="github" href="https://github.com/MisterYakutovich" arial-label="Go to my projects" target="_blank" class="footer_icon">
-                        <img src="./img_logo/github.png" alt="github">
-                    </a>
-                </div>
-               <div>
-                    <a title="courses rs school" href="https://rs.school/js/" arial-label="Go to school website" target="_blank">
-                        <img src="https://rs.school/images/rs_school_js.svg" class="footer_logo" alt="rs.school">
-                    </a>
-                </div>
-                <div>
-                    <span class="year">2022</span>
-                </div>
-            </footer>
-        </main>
+        </div>
+        <footer class="footer">
+          <div class="footer-item">
+            <a title="github" href="https://github.com/MisterYakutovich" target="_blank" class="footer-item__icon">
+              <img src="./img_logo/github.png" alt="github">
+            </a>
+          </div>
+          <div class="footer-item">
+            <a title="courses rs school" href="https://rs.school/js/" target="_blank">
+              <img src="https://rs.school/images/rs_school_js.svg" class="footer-item__logo" alt="rs.school">
+            </a>
+          </div>
+          <div class="footer-item">
+            <span class="footer-item__year">2022</span>
+          </div>
+        </footer>
+      </main>
     </body>
 </html>
