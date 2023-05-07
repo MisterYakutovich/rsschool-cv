@@ -16,17 +16,17 @@ body
     width: 100%;
     max-width: 1200px;
     min-height: 1300px;
-    padding: 10px;
+   /* padding: 10px; */
     background: white;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 1fr;
 }
 .container .left-side
 {
     position: relative;
     background:wheat;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .profile
@@ -87,6 +87,7 @@ body
 .my-self__text
 {
     font-family: URW Chancery L, cursive;
+    font-weight: bold;
 }
 .education__title
 {
@@ -195,7 +196,8 @@ body
 .container .right-side
 {
     position: relative;
-    background: white; 
+    background: white;
+    padding: 0 20px;
 }
 .my-img
 {
@@ -276,16 +278,19 @@ body
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     position: relative;
-    width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.code pre code
+/*.code pre code*/
+.code__code-exemples
 {
     position: relative;
-    right: 60px;
-    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+.code__pre-exemples{
+    width: 100%;
 }
 .languages__title
 {
@@ -343,9 +348,7 @@ body
 .code {
     margin-top: 40px;
 }
-
 .my-prodjects__title {
-   
     font-family: Arial, sans-serif;
     align-items: center;
     position: relative;
@@ -356,21 +359,17 @@ body
 .my-prodjects__item {
     list-style: none;
     display: inline-block;
-    margin-right: 50px;
 }
 .my-prodjects__list {
     display: flex;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0;
     border-radius: 1.25rem;
     border: 1px solid #E3E1D5;
-    margin-left: 20px;
-    margin-right: 10px;
+    flex-direction: column;
 }
 .footer {
     display: flex;
-    height: 70px;
     background:wheat;
     align-items: center;
     flex-wrap: nowrap;
@@ -487,48 +486,46 @@ body
     .my-prodjects__title {
         font-size: 30px;
     }
-    .code_exemples {
+    .code-exemples {
         font-size: 30px;
     }
     .container .left-side{
         padding: 10px;
     }
     /*right part*/
+    .container .right-side{
+        padding: 10px;
+    }
     .tech-skills__technology{
         margin-bottom: -10px;
-    }
-    .my-prodjects__list {
-        width: 350px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
 @media screen and (max-width: 925px){
     .my-prodjects__list {
-        width: 300px;
+        width: 100%;
     }
     .my-prodjects__item {
         margin-right: 30px;
     }
-    .code pre code{
+    .code__code-exemples{
         position: relative;
-        right: 150px;
-        width: 300px;
+        right: 70px;
+        width: 100%;
         display: block;
     }
     
-    .my_img {
+    .my-img {
         width: 250px;
         height: 250px;
     }
 }
-@media screen and (max-width: 700px){
-    .code pre code{
-        right: 200px;
+@media screen and (max-width: 767px){
+    .code__code-exemples{
+       font-size: 11px;
        
     }
     .my-prodjects__list {
-        width: 250px;
+        width: 100%;
         padding: 0;
         margin-left: auto;
         margin-right: auto;
@@ -556,5 +553,129 @@ body
     .education ul li h3{
         line-height: 18px;
     }
-   
+    .my-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 640px){
+    .code__code-exemples {
+        right: 100px;
+        font-size: 10px;
+    }
+    .contacts__list {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 500px){
+    .my-img {
+        width: 100px;
+        height: 100px;
+    }
+    .profile__letter {
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .profile__job {
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .my-self__about {
+        font-size: 18px;
+        text-align: center;
+    }
+    .education__title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .my-self__text {
+        font-size: 14px;
+    }
+    .education__item:first-child {
+        margin-top: 0px;
+    }
+    .education-item__data {
+        font-size: 13px;
+    }
+    .education-item__title {
+        text-align: center;
+    }
+    .education-item__job {
+        text-align: center;
+    }
+    .education__item {
+        margin: 20px 0;
+    }
+    .education-item__p {
+        font-size: 13px;
+    }
+    .experience__title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .experiente {
+        margin-top: 60px;
+    }
+    .education-item__button {
+        font-size: 13px;
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    #button-id {
+        margin-top: 13px;
+    }
+    .experience__item {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+    .experience-item__title {
+        font-size: 15px;
+    }
+    .experience-item__myjob {
+        font-size: 15px;
+    }
+    .experience__item:last-child {
+        margin-bottom: 0px;
+    }
+    .languages__title {
+        font-size: 18px;
+        text-align: center;
+    }
+   .languages__list {
+    font-size: 15px;
+   }
+   .languages__item {
+    margin: 15px 0;
+   }
+   .experience-item__p {
+    font-size: 14px;
+   }
+  .footer-item__logo {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-skills__title {
+    font-size: 18px;
+    text-align: center;
+  }
+  /*right part*/
+  .tech-skills__technology {
+    font-size: 14px;
+  }
+  .my-prodjects__title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .code-exemples {
+    font-size: 17px;
+    text-align: center;
+  }
+  .code__code-exemples {
+    font-size: 7px;
+    right: 80px;
+  }
 }
