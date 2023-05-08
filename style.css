@@ -73,9 +73,12 @@ body
 }
 .contacts-item__text
 {
-    font-weight: 300;
-    font-family: URW Chancery L, cursive;
-    color: black;
+   /* font-weight: 300;
+    font-family: URW Chancery L, cursive;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #636060;
 }
 .my-self__about
 {
@@ -86,8 +89,12 @@ body
 }
 .my-self__text
 {
-    font-family: URW Chancery L, cursive;
+   /* font-family: URW Chancery L, cursive;
+    font-weight: bold;*/
+    font-family: 'Georgia';
+    font-style: normal;
     font-weight: bold;
+    line-height: 23px;
 }
 .education__title
 {
@@ -107,9 +114,13 @@ body
 {
     margin: 65px 0px; /*30px 0*/
     position: relative;
-    line-height: 10px;   
-    font-family: URW Chancery L, cursive; 
+    line-height: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+   /* font-family: URW Chancery L, cursive; */
 }
+
 .education__item:first-child {
     margin-top: 30px;
 }
@@ -141,12 +152,14 @@ body
     margin-top: 0px;
     box-sizing: border-box;
     border: 2px solid green;
-    color: black;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
-    font-family:  URW Chancery L, cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #636060;
+   /* font-family:  URW Chancery L, cursive;*/
     font-weight: bold;
 }
 
@@ -166,7 +179,10 @@ body
     list-style: none;
     position: relative;
     padding: 0px;
-    font-family: URW Chancery L, cursive;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+  /*  font-family: URW Chancery L, cursive;*/
 }
 .experience__item
 {
@@ -180,7 +196,10 @@ body
 }
 .experience-item__p
 {
-    font-family: URW Chancery L, cursive;
+   /* font-family: URW Chancery L, cursive;*/
+    font-family: 'Georgia';
+    font-style: normal;
+    line-height: 27px;
     font-size: 1.17em;
     font-weight: bold;
 }
@@ -241,13 +260,17 @@ body
 {
     position: relative;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #636060;
    /* width: 100%;
     display: grid;
     grid-template-columns: 100px 0.9fr;
      grid-auto-rows: 40px;
     justify-content: center;
     align-items: center;*/
-    font-family: URW Chancery L, cursive; 
+  /*  font-family: URW Chancery L, cursive; */
 }
 
 .tech-skills__technology h4 {
@@ -317,13 +340,19 @@ body
     width: 100px;
     font-size: 22px;
     color: green;
-    font-family: URW Chancery L, cursive;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+   /* font-family: URW Chancery L, cursive;*/
 }
-.languages__item-leve
+.languages__item-level
 {
     display: inline-block;
     font-size: 18px;
-    font-family: URW Chancery L, cursive;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+   /* font-family: URW Chancery L, cursive;*/
 }
 .code pre code .orange
 {
@@ -430,9 +459,9 @@ body
 }
 .footer-item__year {
     position: relative;
-  /*  left: 800px;*/
-    font-weight: 300;
-    font-family: URW Chancery L, cursive;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: bold;
 }
 @media screen and (max-width: 925px){
     .my-self__text {
