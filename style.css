@@ -167,6 +167,12 @@ body
 {
     color: green;
 }
+.education-item__description {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+}
 .experience__title
 {
     letter-spacing: 1px;
@@ -390,12 +396,16 @@ body
     display: inline-block;
 }
 .my-prodjects__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
     text-align: center;
     padding: 0;
     border-radius: 1.25rem;
     border: 1px solid #E3E1D5;
-    flex-direction: column;
+   
 }
 .footer {
     display: flex;
@@ -534,7 +544,7 @@ body
         width: 100%;
     }
     .my-prodjects__item {
-        margin-right: 30px;
+       /* margin-right: 30px;*/
     }
     .code__code-exemples{
         position: relative;
@@ -553,11 +563,15 @@ body
        font-size: 11px;
        
     }
+    .languages__item-level {
+        line-height: 30px;
+    }
     .my-prodjects__list {
         width: 100%;
         padding: 0;
         margin-left: auto;
         margin-right: auto;
+        column-gap: 10px;
     }
     .prodject-logo-momentum {
         width: 50px;
@@ -572,7 +586,7 @@ body
         height: 50px;
     }
     .my-prodjects__item {
-        margin-left: 20px;
+        /*margin-left: 20px;*/
         margin-right: 0;
 
     }
@@ -587,6 +601,7 @@ body
         height: 200px;
     }
 }
+
 @media screen and (max-width: 640px){
     .code__code-exemples {
         right: 100px;
@@ -597,6 +612,19 @@ body
     }
 }
 @media screen and (max-width: 500px){
+   
+    .prodject-logo-shelter {
+        width: 40px;
+        height: 40px;
+    }
+    .prodject-logo-plants {
+        width: 70px;
+        height: 60px;
+    }
+    .prodject-logo-momentum {
+        width: 40px;
+        height: 40px;
+    }
     .my-img {
         width: 100px;
         height: 100px;
