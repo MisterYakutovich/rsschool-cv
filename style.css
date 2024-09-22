@@ -25,7 +25,7 @@ body
 .container .left-side
 {
     position: relative;
-    background:wheat;
+    background:rgb(245, 242, 242);
     padding: 0 20px;
 }
 
@@ -163,6 +163,7 @@ body
     font-weight: bold;
 }
 
+
 .education-item__job
 {
     color: green;
@@ -227,13 +228,13 @@ body
 .my-img
 {
     position: relative;
-    width: 300px;
+    width: 225px;
     height: 300px;
     display:block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 26.8px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     overflow: hidden;
    
 }
@@ -255,6 +256,33 @@ body
     display: flex;
     margin-top: 66px;
    
+}
+.soft-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+.soft-skills__title {
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin-top: 30px;
+}
+.soft-skills__skills {
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #636060;
+}
+.soft-skills__skills h4 {
+    margin-bottom: 5px;
 }
 .tech-skills {
     display: grid;
@@ -320,7 +348,12 @@ body
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    border-bottom: 2px solid;
+    /*border-bottom: 2px solid;*/
+    margin-top: 35px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .languages__list
 {
@@ -403,7 +436,7 @@ body
 }
 .footer {
     display: flex;
-    background:wheat;
+    background:rgb(245, 242, 242);
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-around;   
@@ -415,6 +448,11 @@ body
     transition: 1s;
    /* margin-left: 100px;*/
   /* left: 725px;*/
+}
+.prodject-logo-nextjs{
+    width: 100px;
+    height: 70px;
+    transition: 1s;
 }
 .prodject-logo-shelter{
     position: relative;
@@ -437,6 +475,9 @@ body
 .prodject-logo-momentum:hover {
     transform: scale(1.2);
 }
+.prodject-logo-nextjs:hover {
+    transform: scale(1.2);
+}
 .footer-item__logo {
     position: relative;
     width: 80px;
@@ -448,7 +489,8 @@ body
     transform: scale(1.2);
 }
 .footer-item {
-    margin: 0;
+    margin-top: 90px;
+    /*margin: 0;*/
     text-align: center;
 }  
 .footer-item__icon {
