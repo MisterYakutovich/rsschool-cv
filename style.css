@@ -62,6 +62,7 @@ body
 .contacts-item__link
 {
    text-decoration: none;
+   border-bottom: 1px solid black;
 }
 
 .contacts-item__icon
@@ -168,10 +169,20 @@ body
 {
     color: green;
 }
+.experience-item__link {
+    color: green;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
 .education-item__description {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: bold;
+    line-height: 23px;
+}
+.education-item__description_items {
+    font-family: 'Georgia';
+    font-style: normal;
     line-height: 23px;
 }
 .experience__title
@@ -179,7 +190,12 @@ body
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    border-bottom: 2px solid;
+    margin-top: 35px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*border-bottom: 2px solid;*/
 }
 .experience__list
 {
@@ -266,11 +282,12 @@ body
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    align-items: center;
+    border-bottom: 2px solid;
+    /*align-items: center;
     position: relative;
     flex-direction: column;
     display: flex;
-    margin-top: 30px;
+    margin-top: 30px;*/
 }
 .soft-skills__skills {
     position: relative;
@@ -278,7 +295,7 @@ body
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 23px;
     color: #636060;
 }
 .soft-skills__skills h4 {
@@ -287,6 +304,7 @@ body
 .tech-skills {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 30px;
 
 }
 
@@ -302,10 +320,9 @@ body
 }
 
 .tech-skills__technology h4 {
-    /*width: 200px;*/
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     transition: all 0.2s ease-out;
+    font-size: 23px;
 }
 
 .tech-skills__technology .level
@@ -348,12 +365,12 @@ body
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    /*border-bottom: 2px solid;*/
-    margin-top: 35px;
+    border-bottom: 2px solid;
+    /*margin-top: 35px;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: center;*/
 }
 .languages__list
 {
@@ -387,6 +404,7 @@ body
     font-weight: 400;
    /* font-family: URW Chancery L, cursive;*/
 }
+
 .code pre code .orange
 {
     color: orange;
@@ -416,7 +434,7 @@ body
     position: relative;
     flex-direction: column;
     display: flex;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 .my-prodjects__item {
     list-style: none;
