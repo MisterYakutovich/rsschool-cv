@@ -276,6 +276,7 @@ body
 .soft-skills {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 30px;
    
 }
 .soft-skills__title {
@@ -299,7 +300,7 @@ body
     color: #636060;
 }
 .soft-skills__skills h4 {
-    margin-bottom: 5px;
+   margin: 0 auto;
 }
 .tech-skills {
     display: grid;
